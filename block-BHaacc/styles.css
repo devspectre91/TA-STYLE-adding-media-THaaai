@@ -1,0 +1,615 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Roboto', sans-serif;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* general styling */
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+
+}
+
+.flex-r {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-c {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+body {
+    line-height: 1.5;
+}
+
+/* styling header */
+
+.header {
+
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(75, 130, 218, 0.842), rgba(25, 246, 80, 0.76)), url(assets/home-bg.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover;
+
+}
+
+.navbar {
+    padding: 30px 0;
+    padding-bottom: 200px;
+
+}
+
+.brand-icon {
+
+    font-size: 26px;
+    font-weight: 700;
+    color: white;
+    flex-grow: 1;
+}
+
+.navbar .links {
+    flex-grow: 2;
+    justify-content: center;
+
+}
+
+.navbar .social-icons {
+    flex-grow: 4;
+    justify-content: flex-end;
+}
+
+.navbar .links a {
+
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    margin-left: 25px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.social-icons .fa {
+    color: white;
+    margin-left: 20px;
+}
+
+.btn {
+    padding: 15px 25px;
+
+    color: white;
+    font-size: 16px;
+
+    border-radius: 30px;
+    margin-left: 30px;
+}
+
+.btn-primary {
+
+    background-color: #CF3932;
+}
+
+.hero {
+    padding-bottom: 230px;
+}
+
+.hero-info {
+    flex-basis: 45%;
+    padding: 2% 0;
+}
+
+.hero-video {
+    flex-basis: 50%;
+    padding: 2% 0;
+    text-align: right;
+}
+
+.hero-info h1 {
+    font-weight: 500;
+    color: white;
+    font-size: 48px;
+}
+
+.hero-info p {
+    color: white;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.btn-hero {
+    padding: 10px 25px;
+    border: 2px solid white;
+    margin-left: 0;
+    margin-right: 20px;
+}
+
+.row2 {
+    padding: 20px 0;
+    justify-content: flex-start;
+}
+
+
+/* styling main  */
+
+/* styling  introduction section--------------------------------------------- */
+
+.introduction {
+    padding: 106px 0;
+    position: relative;
+}
+
+.col-1 {
+    flex-basis: 40%;
+    align-items: flex-start;
+
+}
+
+.col-2 {
+    flex-basis: 20%;
+}
+
+.col-3 {
+    flex-basis: 35%;
+}
+
+
+h2 {
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.col-1 hr {
+    width: 48px;
+    border: 0;
+    margin: 10px 0;
+
+    border-bottom: 7px dashed rgb(171, 171, 171);
+}
+
+.col-1 p {
+
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(119, 119, 119);
+    padding-top: 10px;
+}
+
+.col-2 h3 {
+
+    font-size: 16px;
+    width: 70%;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+
+.col-2 p {
+    width: 20%;
+
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(119, 119, 119);
+    padding-top: 10px;
+
+}
+
+.col-2 hr {
+    border-bottom: 3px solid black;
+}
+
+.item1 {
+    border: 0;
+    width: 85%;
+    margin: 5px 0;
+
+}
+
+.item2 {
+    border: 0;
+    width: 90%;
+    margin: 5px 0;
+
+}
+
+.item3 {
+    border: 0;
+    width: 75%;
+    margin: 5px 0;
+
+}
+
+.item4 {
+    border: 0;
+
+    width: 70%;
+    margin: 5px 0;
+
+}
+
+.col-3 img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 50px;
+    width: 350px;
+}
+
+
+/* styling blog section */
+
+.blog {
+    padding: 60px 0;
+    background-color: #EFEFEF;
+}
+
+hr {
+    width: 48px;
+    border: 0;
+    margin: 10px auto;
+
+    border-bottom: 7px dashed rgb(171, 171, 171);
+}
+
+.blog-heading {
+    text-align: center;
+}
+
+
+.card {
+    justify-content: flex-start;
+    flex-basis: 49%;
+    padding: 15px 0;
+}
+
+.card-header {
+    justify-content: flex-start;
+}
+
+.card-image {
+    flex-basis: 200px;
+    height: 330px;
+
+
+}
+
+.card-content {
+    height: 328px;
+    flex-basis: 400px;
+    padding: 20px 30px;
+    justify-content: center;
+    background-color: white;
+    align-items: flex-start;
+}
+
+.card-image img {
+    width: 220px;
+
+
+}
+
+.card-container {
+    padding: 40px 0;
+    flex-wrap: wrap;
+}
+
+.card-header {
+    color: red;
+}
+
+.card-header p {
+    color: red;
+}
+
+.card-header .fa {
+    margin-right: 10px;
+}
+
+.card-content h2 {
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 1.2;
+    padding: 10px 0;
+    text-transform: capitalize;
+}
+
+.card-content h4 {
+    color: rgb(119, 119, 119);
+    font-size: 16px;
+}
+
+.btn-card {
+    background-color: #EFEFEF;
+    color: black;
+    margin-left: 0;
+    margin-top: 20px;
+
+
+}
+
+/* styling work section------------------------------- */
+
+
+.work {
+    padding: 50px 0;
+}
+
+.work-container {
+    padding: 30px 0;
+
+}
+
+.work-container div {
+    flex-basis: 22%;
+
+}
+
+.work-container img {
+    width: 250px;
+}
+
+/* styling contact us section------------------------- */
+
+.contact {
+    padding: 50px 0;
+    background-image: linear-gradient(to right, rgba(75, 130, 218, 0.842), rgba(25, 246, 80, 0.76));
+
+}
+
+.inputs {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.text-input {
+    flex-basis: 40%;
+}
+
+.form {
+    align-items: flex-start;
+}
+
+input {
+    margin: 10px 0;
+    margin-right: 20px;
+    padding: 15px;
+    padding-left: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid rgb(171, 171, 171);
+
+
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: rgb(171, 171, 171);
+}
+
+.map iframe {
+    border-radius: 175px;
+}
+
+textarea {
+    margin: 20px 0;
+    padding: 15px;
+    padding-left: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid rgb(171, 171, 171);
+}
+
+.form-btn {
+    margin-left: 0;
+    padding: 15px 50px;
+
+}
+
+
+/* styling footer -----------------------------------*/
+.footer {
+    padding: 50px 0;
+    background-image: linear-gradient(to right, #414141, #000000);
+
+}
+
+.footer-upper {
+    align-items: flex-start;
+}
+
+.footer-upper .col-1 {
+    flex-basis: 35%;
+}
+
+.footer-upper .col-2 {
+    flex-basis: 20%;
+}
+
+.footer-upper .col-3 {
+    flex-basis: 20%;
+}
+
+.footer-upper .col-4 {
+    flex-basis: 20%;
+}
+
+.footer hr {
+    border: none;
+    border-top: 1px solid grey;
+    width: 100%;
+    margin: 50px 0;
+}
+
+.footer-lower {
+    justify-content: flex-start;
+}
+
+.footer .fa {
+    margin-left: 30px;
+    color: rgb(219, 219, 219)
+}
+
+.footer p {
+    color: rgb(219, 219, 219);
+    font-weight: 500;
+}
+
+.footer h2 {
+    color: white;
+}
+
+.footer-links a {
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(219, 219, 219);
+}
+
+.copyright-text {
+    margin-right: 400px;
+}
